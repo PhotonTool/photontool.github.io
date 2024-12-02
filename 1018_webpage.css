@@ -1,0 +1,302 @@
+/* 通用样式 */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+h1, h2, h3, p, a, .subtitle, .member-info {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 头部样式 */
+header .banner {
+    padding: 40px 0;
+    text-align: center;
+}
+
+header .banner .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+header .banner h1 {
+    margin-top: 10px;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #565353;
+}
+
+header .banner h1 .highlight {
+    color: #095d01da; /* 这里可以设置你想要的颜色 */
+}
+.subtitle {
+    font-size: 1.5rem;
+    color: #666666;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #ffffff;
+    border-bottom: 1.5px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-bottom: 21px;
+    margin-bottom:5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333333;
+    font-size: 1.2rem;
+    padding: 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1c3a6e;
+}
+
+/* 主体内容样式 */
+main section {
+    padding: 60px 0;
+}
+
+main section h2 {
+    font-size: 2.5rem;
+    color: #1c3a6e;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555555;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 团队部分样式改进 */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px; /* 增大圆角效果 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* 添加阴影，提升层次感 */
+    transition: transform 0.3s; /* 添加悬停效果 */
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* 悬停时放大 */
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.member-info h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.member-info .title {
+    font-size: 1rem;
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+/* 投资组合部分样式 */
+.icon-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.icon-section div {
+    flex: 1 1 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.icon-section img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.icon-section h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center; /* 添加居中 */
+}
+
+/* 确保标题居中 */
+#portfolio h2 {
+    font-size: 2.5rem;
+    color: #1c3a6e;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 公司Logo图片的样式 */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 自适应列数 */
+    gap: 20px; /* logo 之间的间距 */
+    justify-items: center; /* 居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.logo-grid img {
+    max-width: 150px;
+    max-height: 80px; /* 确保所有logo不会超过此高度 */
+    height: auto;
+    margin: 10px;
+}
+
+/* 联系方式部分样式 */
+#contact {
+    background-color: #f9f9f9;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact-container .image-container,
+.contact-container .text {
+    flex: 1 1 300px;
+    padding: 20px;
+}
+
+.contact-container .image-container img {
+    border-radius: 10px;
+}
+
+.contact-container .text h2 {
+    font-size: 1.5rem;
+    color: #1c3a6e;
+    margin-bottom: 40px;
+}
+
+.contact-container .text p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.contact-container .text a {
+    color: #1c3a6e;
+    text-decoration: none;
+}
+
+.contact-container .text a:hover {
+    text-decoration: underline;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #eaeaea;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #777777;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
